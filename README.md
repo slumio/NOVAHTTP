@@ -47,7 +47,7 @@ The project provides a practical foundation for learning systems programming as 
 ## 📦 Getting Started
 
 ### Prerequisites
-- Linux (testing on Fedora Prerequisite)
+- Linux (I am building it on Fedora WorkStation 41)
 - CMake ≥ 3.16
 - GCC ≥ 11 or Clang ≥ 13
 - OpenSSL ≥ 1.1.1
