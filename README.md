@@ -1,48 +1,59 @@
 # 🌌 NOVA HTTP Server
 
-NOVA HTTP Server is a **high-performance, production-ready HTTP server** implemented in **modern C++20**, designed to showcase deep expertise in **Linux networking, concurrency, and performance optimization**.  
-It is built from the ground up for **efficiency, scalability, and security**, making it both a practical HTTP server and a **resume-ready project for top-tier software engineering roles**.
+NOVA is a **high-performance HTTP server** built with **modern C++20**.  
+It is designed for **efficiency, scalability, and security**, with a focus on Linux networking and concurrency.  
+The project provides a practical foundation for learning systems programming as well as building production-ready applications.
 
 ---
 
-## 🚀 Purpose
+## 🚀 Overview
 
-- Demonstrate mastery of **Linux networking internals** and **async I/O**  
-- Showcase **production-grade C++ development practices**  
-- Serve as a **reference implementation** for high-performance server design  
-
----
-
-## ✨ Key Features
-
-- **Epoll-based Event Loop** → Efficient async I/O with edge-triggered polling  
-- **Zero-Copy File Serving** → Uses `sendfile()` for optimal static content delivery  
-- **HTTP/1.1 Compliance** → Persistent connections & request pipelining  
-- **TLS/SSL Integration** → OpenSSL with modern cipher suites & ALPN support  
-- **Thread Pool Architecture** → Optimized worker model with work stealing  
-- **Object Pooling** → Memory-efficient connection & request lifecycle management  
-- **Production Observability** → Prometheus metrics, structured logging, health checks  
-- **Security Hardening** → Rate limiting, input validation, secure defaults  
-- **Container Ready** → Docker multi-stage builds & Kubernetes manifests  
+- Lightweight, modular, and extensible HTTP server
+- Based on **epoll** for asynchronous I/O
+- Optimized for **low-latency request handling** and **high concurrency**
+- Built with clean, modern C++20 features
 
 ---
 
-## 🛠 Technical Excellence
+## ✨ Features
 
-- Modern **C++20** with RAII, smart pointers, and move semantics  
-- **Custom memory management** with object pools and allocator strategies  
-- **Comprehensive testing**:
+- **Event-driven architecture** using epoll (edge-triggered)
+- **Zero-copy static file serving** with `sendfile()`
+- **HTTP/1.1 support**: persistent connections & pipelining
+- **TLS/SSL integration** with OpenSSL (secure cipher suites, ALPN)
+- **Thread pool workers** with work-stealing for scalability
+- **Memory-efficient design** via object pooling
+- **Observability**: structured logging, metrics, health checks
+- **Security features**: rate limiting, safe request parsing, secure defaults
+- **Containerized deployment**: Docker & Kubernetes ready
+
+---
+
+## 🛠 Technical Details
+
+- Written in **C++20** (RAII, smart pointers, move semantics)
+- **Custom allocator strategies** for optimized memory usage
+- Testing:
   - Unit tests
   - Integration tests
-  - Fuzzing for robustness  
-- **CI/CD pipeline** using GitHub Actions:
-  - Automated builds
-  - Test execution
-  - Deployment artifacts  
-- **Performance Benchmarking**:
-  - Measurable throughput and latency improvements compared to baseline servers  
+  - Fuzzing for robustness
+- CI/CD with **GitHub Actions** (builds, tests, release artifacts)
+- **Benchmark suite** for throughput & latency evaluation
 
 ---
 
+## 📦 Getting Started
 
+### Prerequisites
+- Linux (tested on Ubuntu 22.04)
+- CMake ≥ 3.16
+- GCC ≥ 11 or Clang ≥ 13
+- OpenSSL ≥ 1.1.1
 
+### Build
+```bash
+git clone https://github.com/your-username/nova-http.git
+cd nova-http
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
