@@ -1,3 +1,5 @@
+# This project is under development
+
 # 🌌 NOVA HTTP Server
 
 NOVA is a **high-performance HTTP server** built with **modern C++20**.  
@@ -45,7 +47,7 @@ The project provides a practical foundation for learning systems programming as 
 ## 📦 Getting Started
 
 ### Prerequisites
-- Linux (tested on Ubuntu 22.04)
+- Linux (testing on Fedora Prerequisite)
 - CMake ≥ 3.16
 - GCC ≥ 11 or Clang ≥ 13
 - OpenSSL ≥ 1.1.1
