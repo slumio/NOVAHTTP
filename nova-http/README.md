@@ -44,5 +44,5 @@ It is built from the ground up for **efficiency, scalability, and security**, ma
 
 ---
 
-## 📂 Project Structure
+
 
