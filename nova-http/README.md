@@ -9,7 +9,6 @@ It is built from the ground up for **efficiency, scalability, and security**, ma
 
 - Demonstrate mastery of **Linux networking internals** and **async I/O**  
 - Showcase **production-grade C++ development practices**  
-- Provide a **resume-ready project** for Systems/Backend/SRE roles at top tech companies  
 - Serve as a **reference implementation** for high-performance server design  
 
 ---
